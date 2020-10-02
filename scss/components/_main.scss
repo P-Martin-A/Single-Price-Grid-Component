@@ -4,6 +4,9 @@
     .one{
         background-color: $white;
         @include grid-area(one);
+        @include desktops-b() {
+            height: 20rem;
+        }
 
         .title{
             color: $dark-cyan;
@@ -55,7 +58,7 @@
             margin-bottom: 2.5rem;
             @include desktops() {
                 margin-bottom: 2rem;
-                font-size: 1.4  rem;
+                font-size: 1.4rem;
             }
         }
 
@@ -88,6 +91,9 @@
             @include desktops() {
                 font-size: 1.35rem;
                 width: 80%;
+            }
+            @include desktops-b() {
+                font-size: 1.3rem;
             }
         }
     }
