@@ -18,8 +18,8 @@ html{
             height: 100vh;
             @include display(flex, center, center);
         }
-        @include desktops-() {
-            padding: 15rem 0;
+        @include desktops-b() {
+            padding: 18rem 0;
         }
     }
 }
