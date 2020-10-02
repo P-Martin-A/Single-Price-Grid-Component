@@ -1,9 +1,15 @@
 /*
     MEDIA QUERIES
 */
-// DESKTOPS LARGE
+// DESKTOPS 
 @mixin desktops() {
     @media (min-width: 995px) {
+        @content;
+    }
+}
+// DESKTOPS-
+@mixin desktops-() {
+    @media (min-width: 995px) and (min-height: 800px) {
         @content;
     }
 }
