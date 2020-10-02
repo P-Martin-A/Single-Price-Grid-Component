@@ -14,12 +14,12 @@ html{
         font-family: $font;        
         padding: 6rem 4rem;
         @include desktops() {
-            padding: 8rem 0;
+            padding: 5rem 0;
             height: 100vh;
             @include display(flex, center, center);
         }
         @include desktops-b() {
-            padding: 18rem 0;
+            padding: 15rem 0;
         }
     }
 }
