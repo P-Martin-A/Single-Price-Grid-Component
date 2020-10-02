@@ -1,0 +1,94 @@
+#main{
+    @include display(grid);
+
+    .one{
+        background-color: $white;
+        @include grid-area(one);
+
+        .title{
+            color: $dark-cyan;
+        }
+
+        .subtitle{
+            color: $bright-yellow;
+            margin: 2rem 0;
+            font-size: 1.5rem;
+            @include desktops() {
+                margin: 1.5rem 0 1rem;
+                font-size: 1.65rem;
+            }
+        }
+
+        .text{
+            color: $grayish-blue;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            @include desktops() {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .two{
+        background-color: $dark-cyan;
+        @include grid-area(two);
+
+        .title{
+            font-size: 2rem;
+        }
+
+        .price{ 
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            font-weight: 400;
+            @include display(flex, center, flex-start);
+
+            b{
+                font-size: 2.5rem;
+                margin-right: 1rem;
+            }
+        }
+
+        .info{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+            @include desktops() {
+                margin-bottom: 2rem;
+                font-size: 1.4  rem;
+            }
+        }
+
+        .btn{
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1.2rem 0;
+            border-radius: .5rem;
+            box-shadow: 0 1.2rem 2rem $black;
+            color: $white;
+            background-color: $bright-yellow;
+            @include display(inline-block);
+        }
+    }
+
+    .three{
+        background-color: $light-cyan;
+        @include grid-area(three);
+
+        .title{
+            font-size: 2rem;
+        }
+
+        .text{
+            font-size: 1.6rem;
+            margin-top: 2.2rem;
+            line-height: 1.6;
+            @include desktops() {
+                font-size: 1.4rem;
+                width: 80%;
+            }
+        }
+    }
+}
